@@ -1,0 +1,70 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+.loginForm{
+	width: 500px;
+	margin:70px auto;
+	background-color: #eee;
+	padding: 30px;
+}
+.leftSide{
+	padding: 0px 20px;
+    border-right: 1px solid #eee;
+    height: 500px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.listContainer{
+	list-style: none;
+	padding-left: 16px;
+	text-transform: capitalize;
+}
+.listContainer li{
+
+}
+.rightSide{
+	background-color: #ddd;
+	padding: 10px;
+}
+.rightSideContainer{
+	background-color: #22242a;
+    padding: 10px;
+    color: #fff;
+    font-size: 20px
+}
+.listItem{
+	background-color: rgba(204, 204, 204, 0.19);
+    padding: 15px 0px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 1px #ddd;
+}
+.leftHeader{
+	    background-color: rgba(33, 150, 243, 0.82);
+    padding: 10px;
+    line-height: 31px;
+    font-size: 20px;
+    color: #fff;
+}

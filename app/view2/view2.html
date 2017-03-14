@@ -1,0 +1,34 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-6 col-sm-6 col-xs-6 leftSide">
+			<div class="col-md-12 leftHeader">
+				<div class="col-md-8">
+					Library
+				</div>
+				<div class="col-md-4">
+					<button type="button" class="pull-right btn btn-info" ng-click="playallBtn()">Play All</button>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="row listItem" ng-repeat="video in videolist">
+					<div class="col-md-4">
+						<video src="{{video.video_url}}" id="myvideo" width="150" height="100" controls style="background:black">
+						</video>
+					</div>
+					<div class="col-md-8">
+						<h5><strong>{{video.video_title}}</strong></h5>
+						<h6>{{video.video_desc}}</h6>
+						<h6>Views:{{video.count}}</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6 col-sm-6 col-xs-6 rightSide">
+			<div class="rightSideContainer">
+				<video id="videoScreen" width="530" height="400" controls style="background:black">
+				</video>
+				{{videolist[activeVideoSrc].video_title}} - {{activeVideoSrc}}
+			</div>
+		</div>
+	</div>
+</div>
